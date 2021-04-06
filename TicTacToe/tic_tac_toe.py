@@ -18,6 +18,7 @@ class TicTacGame:
 
     def game_cycle(self):
         while True:
+            # clear screen
             os.system('cls' if os.name == 'nt' else 'clear')
             winner = self.check_winner()
             if winner is not None:
